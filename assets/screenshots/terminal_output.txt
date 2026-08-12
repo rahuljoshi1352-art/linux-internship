@@ -1,0 +1,41 @@
+Linux Internship - Terminal Output Log
+
+User creation:
+sudo adduser internuser
+
+User added to sudo group:
+sudo usermod -aG sudo internuser
+
+User verification:
+id internuser
+groups internuser
+
+Output:
+uid=1001(internuser) gid=1001(internuser) groups=1001(internuser),27(sudo),100(users)
+
+File permissions:
+chmod 600 permission_test.txt
+sudo chown internuser:internuser permission_test.txt
+ls -l permission_test.txt
+
+Output:
+-rw------- 1 internuser internuser 0 permission_test.txt
+
+Package management:
+sudo apt update
+sudo apt install tree
+tree
+sudo apt remove tree
+sudo apt upgrade
+
+Bash backup:
+./scripts/backup.sh
+
+Output:
+Backup completed successfully!
+
+Backup verification:
+ls -l ~/backup
+
+Output:
+internship_backup.tar.gz
