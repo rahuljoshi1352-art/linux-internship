@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 SOURCE_DIR="${1:-$HOME/internship_demo}"
